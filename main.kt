@@ -13,7 +13,14 @@ fun main() {
     val frequestMap = topFrequentChar(inputString, index, ::UtilTopElem)
     println("$frequestMap")
 }
-
+/*
+* top element in a map witinout listOfNumber or string using Map of to check element already
+* present in map by call getOrdefault fun takes key element and retruns 0 by default,
+* strire it in initialized mutable map of the generic type wuth key eother Int or Char later on
+* same map call toList, then sortedByDescending takes lambda for second value in list of numbers,
+* on same map call take function which takes number as inout for prefered numbers, and then covert
+* retruned data holder to map, to print key value pair
+* */
 fun UtilTopElem(input: String ,index: Int): Map<Char,Int>{
     var numCountMap = mutableMapOf<Char, Int>()
     for (ele in input){
